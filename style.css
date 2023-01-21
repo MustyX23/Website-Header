@@ -50,14 +50,34 @@ nav ul li a{
     flex-basis: 50%;    
 }
 h1{
-    color: #fff;
+    color: rgb(226, 178, 45);
     font-size: 100px;
-    
+    font-family: 'Mada', sans-serif;
+    transition: all 1.5s ease-in-out;
+    position: relative;
 }
-p{
+h1:hover {
+    animation: move-left 1s ease-in-out infinite alternate;
+}
+@keyframes move-left {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(50px);
+    }
+}
+p {
     color: #fff;
     font-size: 11px;
+    font-family: 'Noto Sans', sans-serif;
     line-height: 15px;
+    transition: all 0.2s ease-in-out;
+}
+p:hover {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
 }
 button{
     width: 180px;
